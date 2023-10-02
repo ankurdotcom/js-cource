@@ -116,3 +116,18 @@ length
 
 let result = addNumbers(20,10,100);
 console.log(`result : ${result}`);
+
+
+// --------- same can also be achived through spread operator
+
+function addNumbers2(...numbers){
+    console.log();
+    let ans = 0;
+    for(let i = 0; i < numbers.length; i = i + 1){
+        ans = ans + numbers[i];
+    }
+    return ans;
+}
+
+let result2 = addNumbers2(20,10,100);
+console.log(`result 2 : ${result}`);
