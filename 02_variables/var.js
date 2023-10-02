@@ -28,6 +28,20 @@ if(true){
 }
  */
 
+if(true){
+    console.log('name ' + name1);
+    const name1 = 'Ankur';
+    // name1 = 'Ankur';
+    console.log('name ' + name1);
+}
+
+if(true){
+    console.log('name ' + name1);
+    let name1 = 'Ankur';
+    // name1 = 'Ankur';
+    console.log('name ' + name1);
+}
+
 
 // var add itself in to window object, But let and const not.
 var varName = 'varNameValue';
