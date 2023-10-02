@@ -130,4 +130,4 @@ function addNumbers2(...numbers){
 }
 
 let result2 = addNumbers2(20,10,100);
-console.log(`result 2 : ${result}`);
+console.log(`result 2 : ${result2}`);
