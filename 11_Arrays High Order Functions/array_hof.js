@@ -47,15 +47,34 @@ console.log(`result2 ${result2}`); // result2 2,4,6,8,10,12,14,16
 
 // ------------------ FlatMap 
 
+
+
+const arr1 = [1, 2, 3, 4];
+
+const arr11 = arr1.map((x) => [x * 2]);
+// [[2], [4], [6], [8]]
+
+const arr12 = arr1.flatMap((x) => [x * 2]);
+// [2, 4, 6, 8]
+
+// only one level is flattened
+const arr13 = arr1.flatMap((x) => [[x * 2]]);
+// [[2], [4], [6], [8]]
+
+const arr14 = arr1.map((x) => [[x * 2]]);
+// console.log(arr14); // [[[2]], [[4]], [[6]], [[8]]]
+
+
+/**
 const arr1 = [0,1,-1];
 
 if(arr1[0]){
-    console.log(arr1[0]);
+    console.log(arr1[0]); // false
 } else if(arr1[1]){
-    console.log(arr1[1]);
+    console.log(arr1[1]); // true
 } else if(arr1[2]){
-    console.log(arr1[2]);
+    console.log(arr1[2]); // false
 } else if(arr1[0] === 0){
-    console.log(arr1[0]);
+    console.log(arr1[0]); // false
 } ;
-
+ */
